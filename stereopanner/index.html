@@ -29,16 +29,16 @@
     $(function(){
         var v = videojs('my_video_1', {}, function(){
             this.stereopanner();
-        });
-        $("#st1").click(function(){
-            $("#st2").removeClass('active');
-            $(this).addClass('active');
-            v.panToLeft();
-        });
-        $("#st2").click(function(){
-            $("#st1").removeClass('active');
-            $(this).addClass('active');
-            v.panToRight();
+            $("#st1").click(function(){
+                $("#st2").removeClass('active');
+                $(this).addClass('active');
+                v.panToLeft();
+            });
+            $("#st2").click(function(){
+                $("#st1").removeClass('active');
+                $(this).addClass('active');
+                v.panToRight();
+            });
         });
     });
 </script>
