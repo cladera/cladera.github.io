@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stereo Panner</title>
+    <link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>VideoJS StereoPanner Plugin</h1>
+    <div class="well">
+        <video id="my_video_1" class="video-js vjs-default-skin" controls
+               preload="auto" width="512" height="288"
+               data-setup='{}'>
+            <source src="sample.mp4" type='video/mp4'>
+        </video>
+        <div class="btn-group" style="margin-top: 10px;">
+            <button type="button" id="st1" class="active btn btn-primary">Sound track 1</button>
+            <button type="button" id="st2" class="btn btn-primary">Sound track 2</button>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+<script src="videojs.stereopanner.min.js"></script>
+<script>
+    $(function(){
+        var v = videojs('my_video_1', {}, function(){
+            this.stereopanner();
+        });
+        $("#st1").click(function(){
+            $("#st2").removeClass('active');
+            $(this).addClass('active');
+            v.panToLeft();
+        });
+        $("#st2").click(function(){
+            $("#st1").removeClass('active');
+            $(this).addClass('active');
+            v.panToRight();
+        });
+    });
+</script>
+</body>
+</html>
