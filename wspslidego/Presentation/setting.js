@@ -23,37 +23,37 @@ window.allowPinchZoom = true
 
 //override thumbnail navigation classes
 /*var style = document.createElement('style');
-style.type = 'text/css';
-style.innerHTML = '.thumbNaviImage { } \n .thumbNaviPanel {}';
-document.getElementsByTagName('head')[0].appendChild(style);*/
+ style.type = 'text/css';
+ style.innerHTML = '.thumbNaviImage { } \n .thumbNaviPanel {}';
+ document.getElementsByTagName('head')[0].appendChild(style);*/
 
 
 /*function onSlideIndexChange(sldNo,countSlides,speakerNote){
-	if(window.parent){
-		if(location.domain=='user.slidego.com'){
-			var scope = "http://www.slidego.com"
-		}else{
-			var scope = "*"
-		}
+ if(window.parent){
+ if(location.domain=='user.slidego.com'){
+ var scope = "http://www.slidego.com"
+ }else{
+ var scope = "*"
+ }
 
-		window.parent.postMessage("onSlideIndexChange(" + sldNo + "," + countSlides + ",'" + speakerNote + "')",scope);
-	}
-}
+ window.parent.postMessage("onSlideIndexChange(" + sldNo + "," + countSlides + ",'" + speakerNote + "')",scope);
+ }
+ }
 
-function onAnimationStart(index){
-	//console.log('ani start:' + index)
-}
+ function onAnimationStart(index){
+ //console.log('ani start:' + index)
+ }
 
-function onAnimationEnd(index){
-	//var count = getSlideCount()
-	//console.log('ani end:' + index + '/' + count)
-}
+ function onAnimationEnd(index){
+ //var count = getSlideCount()
+ //console.log('ani end:' + index + '/' + count)
+ }
 
-function onAnimationNextBuild(slideNo,stepNo,toAnimate){
-	window.parent.postMessage('onAnimationNextBuild(' + slideNo + ',' + stepNo + ',' + toAnimate + ')',"*")
-}
+ function onAnimationNextBuild(slideNo,stepNo,toAnimate){
+ window.parent.postMessage('onAnimationNextBuild(' + slideNo + ',' + stepNo + ',' + toAnimate + ')',"*")
+ }
 
-	
-function onSlideShowTimeUpdate(slideNo,time,total,isAnimating){
-	//console.log(slideNo,time,total)
-}*/
+
+ function onSlideShowTimeUpdate(slideNo,time,total,isAnimating){
+ //console.log(slideNo,time,total)
+ }*/
