@@ -1,0 +1,18 @@
+{
+  "name": "cladera.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cladera/cladera.github.io",
+  "authors": [
+    "cgcladera <cgcladera@gmail.com>"
+  ],
+  "description": "Cladera's site",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

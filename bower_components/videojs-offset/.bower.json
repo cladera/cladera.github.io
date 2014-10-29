@@ -1,0 +1,23 @@
+{
+  "name": "videojs-offset",
+  "version": "0.0.2",
+  "main": "dist/videojs-offset.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/cladera/videojs-offset",
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.2",
+    "commit": "a78ca242c0195d155e08a816656eab9c7ec37d46"
+  },
+  "_source": "git://github.com/cladera/videojs-offset.git",
+  "_target": "~0.0.2",
+  "_originalSource": "videojs-offset",
+  "_direct": true
+}
